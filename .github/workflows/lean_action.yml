@@ -1,0 +1,37 @@
+name: Lean CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Build with the pinned Lean and mathlib versions
+        uses: leanprover/lean-action@v1
+
+      - name: Reject proof placeholders and project axioms
+        shell: bash
+        run: |
+          set -o errexit -o nounset -o pipefail
+          if grep -R -nE '(^|[^[:alnum:]_])(sorry|admit)([^[:alnum:]_]|$)' \
+              --include='*.lean' WeilKernelOnset WeilKernelOnset.lean; then
+            echo 'Found a proof placeholder in project source.' >&2
+            exit 1
+          fi
+          if grep -R -nE '^[[:space:]]*(axiom|opaque)[[:space:]]' \
+              --include='*.lean' WeilKernelOnset WeilKernelOnset.lean; then
+            echo 'Found a project-level axiom or opaque declaration.' >&2
+            exit 1
+          fi
+
+      - name: Print trusted dependencies of principal theorems
+        run: lake build WeilKernelOnset.AxiomAudit

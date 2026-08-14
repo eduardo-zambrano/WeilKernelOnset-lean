@@ -1,0 +1,39 @@
+import WeilKernelOnset
+import WeilKernelOnset.BoundaryProfile
+import WeilKernelOnset.BoundaryCorrelation
+
+/-!
+# Trusted-dependency audit
+
+The commands below report the axioms on which the principal declarations
+depend. Standard Lean foundations such as `propext`, `Quot.sound`, and
+`Classical.choice` may appear. This project introduces no additional axioms.
+-/
+
+#print axioms WeilKernelOnset.kernelVector_reproduces
+#print axioms WeilKernelOnset.norm_partialReflectionUpdate
+#print axioms WeilKernelOnset.compression_norm_le
+#print axioms WeilKernelOnset.twoMetric_kernel_identity
+#print axioms WeilKernelOnset.mixed_kernel_difference
+#print axioms WeilKernelOnset.neumann_solution
+#print axioms WeilKernelOnset.neumann_diagonal_hasSum
+#print axioms WeilKernelOnset.tendsto_opNorm_compact_of_strong
+#print axioms WeilKernelOnset.tendsto_opNorm_compact_of_strong_norm
+#print axioms WeilKernelOnset.tendsto_endpointStripRestriction_norm
+#print axioms WeilKernelOnset.tendsto_endpointStripRestriction_compact_opNorm
+#print axioms WeilKernelOnset.metricOperator_pow_inner_bound
+#print axioms WeilKernelOnset.nonlinear_tsum_bound
+#print axioms WeilKernelOnset.kernel_diagonal_response_expansion
+#print axioms WeilKernelOnset.factorized_kernel_response
+#print axioms WeilKernelOnset.square_strip_sandwich
+#print axioms WeilKernelOnset.product_strip_sandwich
+#print axioms WeilKernelOnset.boundaryProfile_square_integral_bounds
+#print axioms WeilKernelOnset.boundaryProfile_product_integral_bounds
+#print axioms WeilKernelOnset.boundaryProfile_to_firstOrder_and_mass
+#print axioms WeilKernelOnset.logarithmic_boundary_to_onset_bounds
+#print axioms WeilKernelOnset.absorb_nonlinear_remainder
+#print axioms WeilKernelOnset.continuum_even_onset
+#print axioms WeilKernelOnset.continuum_even_onset_of_eta_tendsto
+#print axioms WeilKernelOnset.operatorOnsetDatum_response
+#print axioms WeilKernelOnset.operatorOnsetDatum_core_of_logBoundary
+#print axioms WeilKernelOnset.continuum_even_onset_from_operator_family

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: >-
+  If you use this formalization, please cite the software release and the
+  accompanying manuscript.
+title: >-
+  WeilKernelOnset: Lean 4 formalization of an abstract continuum-onset proof core
+type: software
+authors:
+  - family-names: Zambrano
+    given-names: Eduardo
+version: 0.1.0
+repository-code: https://github.com/eduardo-zambrano/WeilKernelOnset-lean
+url: https://github.com/eduardo-zambrano/WeilKernelOnset-lean
+license: Apache-2.0
+keywords:
+  - Lean 4
+  - formal verification
+  - operator theory
+  - reproducing kernels
+  - Weil kernel
+  - compact localization
+abstract: >-
+  Machine-checked abstract lemmas underlying the partial-reflection,
+  two-metric, compact-localization, logarithmic boundary-profile,
+  boundary-correlation, and remainder-absorption arguments in A Continuum
+  Prime-Power Onset Law for the Localized Weil Kernel.
+references:
+  - type: article
+    title: A Continuum Prime-Power Onset Law for the Localized Weil Kernel
+    authors:
+      - family-names: Zambrano
+        given-names: Eduardo
+    year: 2026
