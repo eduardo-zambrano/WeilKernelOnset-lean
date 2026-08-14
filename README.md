@@ -1,15 +1,12 @@
-# WeilKernelOnset
+# Lean 4 Formalization: A Continuum Prime-Power Onset Law for the Localized Weil Kernel
 
 [![Lean CI](https://github.com/eduardo-zambrano/WeilKernelOnset-lean/actions/workflows/lean_action.yml/badge.svg)](https://github.com/eduardo-zambrano/WeilKernelOnset-lean/actions/workflows/lean_action.yml)
 
-A Lean 4 companion to Eduardo Zambrano's manuscript *A Continuum
-Prime-Power Onset Law for the Localized Weil Kernel*.
+Formal verification companion to **"A Continuum Prime-Power Onset Law for the Localized Weil Kernel"** by Eduardo Zambrano. Built with [Lean 4](https://lean-lang.org/) v4.28.0 and [Mathlib](https://leanprover-community.github.io/) (pinned in `lake-manifest.json`).
 
-This repository machine-checks an abstract proof core drawn from Sections 6--8
-of the manuscript: off-diagonal reflection algebra, change of metric by a
-bounded operator, compact localization of strongly null families, factorized
-nonlinear-response estimates, monotone strip-integral bounds, and the final
-explicit remainder-absorption step.
+## Overview
+
+This repository contains a complete, **sorry-free** machine verification of the abstract proof core drawn from Sections 6--8 of the manuscript --- the paper's novel mechanism: off-diagonal reflection algebra ([`PartialReflection.lean`](WeilKernelOnset/PartialReflection.lean)), change of metric by a bounded operator ([`TwoMetric.lean`](WeilKernelOnset/TwoMetric.lean)), compact localization of strongly null families ([`CompactStrong.lean`](WeilKernelOnset/CompactStrong.lean), [`StripRestriction.lean`](WeilKernelOnset/StripRestriction.lean)), factorized nonlinear-response estimates ([`CompactLocalization.lean`](WeilKernelOnset/CompactLocalization.lean), [`KernelResponse.lean`](WeilKernelOnset/KernelResponse.lean)), logarithmic strip-integral bounds ([`LogScale.lean`](WeilKernelOnset/LogScale.lean), [`BoundaryProfile.lean`](WeilKernelOnset/BoundaryProfile.lean), [`BoundaryCorrelation.lean`](WeilKernelOnset/BoundaryCorrelation.lean), [`LogBoundary.lean`](WeilKernelOnset/LogBoundary.lean)), and the final remainder-absorption and assembly steps ([`Onset.lean`](WeilKernelOnset/Onset.lean), [`Assembly.lean`](WeilKernelOnset/Assembly.lean)). The imported analytic inputs of Sections 3--5 enter as explicit theorem hypotheses, never as axioms.
 
 It is intentionally **not** an end-to-end formalization of the paper's main
 theorem. In particular, it does not formalize the arithmetic and killed-Levy
