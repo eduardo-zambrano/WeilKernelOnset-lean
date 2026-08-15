@@ -8,6 +8,10 @@ type: software
 authors:
   - family-names: Zambrano
     given-names: Eduardo
+    email: ezambran@calpoly.edu
+    orcid: "https://orcid.org/0000-0002-5991-9105"
+    affiliation: "California Polytechnic State University, San Luis Obispo"
+
 version: 0.1.0
 repository-code: https://github.com/eduardo-zambrano/WeilKernelOnset-lean
 url: https://github.com/eduardo-zambrano/WeilKernelOnset-lean
