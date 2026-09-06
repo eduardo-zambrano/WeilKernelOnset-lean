@@ -37,3 +37,19 @@ depend. Standard Lean foundations such as `propext`, `Quot.sound`, and
 #print axioms WeilKernelOnset.operatorOnsetDatum_response
 #print axioms WeilKernelOnset.operatorOnsetDatum_core_of_logBoundary
 #print axioms WeilKernelOnset.continuum_even_onset_from_operator_family
+
+#print axioms WeilKernelOnset.norm_inverse_one_add_apply_le
+#print axioms WeilKernelOnset.inverse_one_add_inner_re_nonneg
+#print axioms WeilKernelOnset.kernel_diagonal_response_resolvent
+#print axioms WeilKernelOnset.resolventRemainder_re_nonneg
+#print axioms WeilKernelOnset.resolventRemainder_im_eq_zero
+#print axioms WeilKernelOnset.neumannRemainder_eq_resolventRemainder
+#print axioms WeilKernelOnset.norm_resolventRemainder_metricOperator_le
+#print axioms WeilKernelOnset.kernel_diagonal_response_im_eq_zero
+#print axioms WeilKernelOnset.first_variation_le_kernel_diagonal_response_re
+#print axioms WeilKernelOnset.mixed_logarithmic_boundary_to_onset_bounds
+#print axioms WeilKernelOnset.diagonal_response_onset_of_mixed_logBoundary
+#print axioms WeilKernelOnset.relative_response_error_bound
+#print axioms WeilKernelOnset.relative_first_variation_of_eta_tendsto
+#print axioms WeilKernelOnset.relative_first_variation_of_scale
+#print axioms WeilKernelOnset.continuum_even_onset_with_first_variation
