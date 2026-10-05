@@ -15,3 +15,4 @@ import WeilKernelOnset.PositiveRemainder
 import WeilKernelOnset.MixedOnset
 import WeilKernelOnset.RelativeOnset
 import WeilKernelOnset.RelativeAssembly
+import WeilKernelOnset.QuantitativeOnset

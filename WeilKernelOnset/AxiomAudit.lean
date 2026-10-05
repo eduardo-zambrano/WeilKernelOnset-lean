@@ -53,3 +53,9 @@ depend. Standard Lean foundations such as `propext`, `Quot.sound`, and
 #print axioms WeilKernelOnset.relative_first_variation_of_eta_tendsto
 #print axioms WeilKernelOnset.relative_first_variation_of_scale
 #print axioms WeilKernelOnset.continuum_even_onset_with_first_variation
+
+#print axioms WeilKernelOnset.logarithmic_relative_error_bound
+#print axioms WeilKernelOnset.tendsto_logarithmic_rate_zero
+#print axioms WeilKernelOnset.eta_tendsto_zero_of_logarithmic_bound
+#print axioms WeilKernelOnset.relative_first_variation_with_logarithmic_rate
+#print axioms WeilKernelOnset.continuum_even_onset_with_logarithmic_relative_error

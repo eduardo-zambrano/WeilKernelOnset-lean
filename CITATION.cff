@@ -26,11 +26,11 @@ keywords:
 abstract: >-
   Machine-checked abstract lemmas underlying the partial-reflection,
   two-metric, compact-localization, logarithmic boundary-profile,
-  boundary-correlation, and remainder-absorption arguments in A Continuum
-  Prime-Power Onset Law for the Localized Weil Kernel.
+  boundary-correlation, remainder, and quantitative relative-error arguments in
+  Prime-power onset and first variation for shifted Weil kernels.
 references:
   - type: article
-    title: A Continuum Prime-Power Onset Law for the Localized Weil Kernel
+    title: Prime-power onset and first variation for shifted Weil kernels
     authors:
       - family-names: Zambrano
         given-names: Eduardo
