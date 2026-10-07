@@ -21,6 +21,23 @@ The formalization checks abstract implications with the analytic and concrete
 operator-space inputs stated explicitly as theorem hypotheses. It is not an
 end-to-end construction of the localized Weil operator.
 
+The manuscript's further clarifications of 7 October record a general
+boundary-profile consequence, `D(ε) ≍ γ ε V(ε)²`, under the stated profile
+and positivity hypotheses, with a compensating reduction of the killing rate
+when the atom pair is added. They also derive the odd-source absolute upper
+bound `|D_n^odd(ε)| ≤ C γ_n ε / log(1/ε)`. These are analytic consequences in
+the manuscript and are not separately formalized in this companion. The
+odd-sector sign and a matching lower bound remain unproved; the conditional
+discussion explains the additional boundary information they would require.
+The common cubic exponent in fixed smooth Galerkin sections reflects their
+linear boundary vanishing and does not establish equality of the continuum
+parity laws.
+
+The Lean source and its audited scope are unchanged by these manuscript
+clarifications. The paper continues to cite formalization revision
+[`c5c6473`](https://github.com/eduardo-zambrano/WeilKernelOnset-lean/tree/c5c64733817fd8061a63bf426e96e625c79884ba);
+the subsequent README update documents the additional analytic statements.
+
 ## What is checked
 
 The revised argument has three checked parts:
